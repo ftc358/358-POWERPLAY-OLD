@@ -114,23 +114,23 @@ public class xdrive extends LinearOpMode {
             if (isStopRequested()) return;
 
             while (opModeIsActive()) {
-                double y = -gamepad1.left_stick_y; // Remember, this is reversed!
-                double x = gamepad1.left_stick_x * 1.1; // Counteract imperfect strafing
-                double rx = gamepad1.right_stick_x;
-
-                // Denominator is the largest motor power (absolute value) or 1
-                // This ensures all the powers maintain the same ratio, but only when
-                // at least one is out of the range [-1, 1]
-                double denominator = Math.max(Math.abs(y) + Math.abs(x) + Math.abs(rx), 1);
-                double motor0power = (y + x + rx) / denominator;
-                double motor1power = (y - x + rx) / denominator;
-                double motor3power = (y - x - rx) / denominator;
-                double motor2power = (y + x - rx) / denominator;
-
-                motor0.setPower(motor0power);
-                motor1.setPower(motor1power);
-                motor3.setPower(motor3power);
-                motor2.setPower(motor2power);
+//                double y = -gamepad1.left_stick_y; // Remember, this is reversed!
+//                double x = gamepad1.left_stick_x * 1.1; // Counteract imperfect strafing
+//                double rx = gamepad1.right_stick_x;
+//
+//                // Denominator is the largest motor power (absolute value) or 1
+//                // This ensures all the powers maintain the same ratio, but only when
+//                // at least one is out of the range [-1, 1]
+//                double denominator = Math.max(Math.abs(y) + Math.abs(x) + Math.abs(rx), 1);
+//                double motor0power = (y + x + rx) / denominator;
+//                double motor1power = (y - x + rx) / denominator;
+//                double motor3power = (y - x - rx) / denominator;
+//                double motor2power = (y + x - rx) / denominator;
+                if (gamepad1.)
+                motor0.setPower(1);
+                motor1.setPower(1);
+                motor3.setPower(1);
+                motor2.setPower(1);
             }
         }
     }
