@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.CRServo;
 
 @TeleOp
-public class danny_xdrive {
+public class danny_xdrive extends LinearOpMode{
 
     protected DcMotor motor1;
     protected DcMotor motor2;
